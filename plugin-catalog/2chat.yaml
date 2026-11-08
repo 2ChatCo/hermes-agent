@@ -1,0 +1,18 @@
+name: 2chat
+title: 2Chat
+repo: https://github.com/2ChatCo/2chat-hermes-plugin
+sha: 8ff983f8ff01b86ed26d5d1bbc4b90bd4df7fc47
+version: "1.0.0"
+description: "Business messaging and calls for 2Chat accounts through 2Chat's hosted MCP server (Streamable HTTP at https://mcp.2chat.io/mcp, OAuth 2.1 sign-in, no keys in config): read and reply to your company's WhatsApp, WhatsApp Business API (WABA) and SMS conversations, manage WABA message templates, search and update contacts, review phone calls, and browse, reserve and manage virtual phone numbers. Bundles the 2chat workflow skill. Agent Plugins v1 package (plugin.json + mcp.json + skills/), configuration only. Disclosure — every tool call goes to 2Chat's hosted server (mcp.2chat.io) and acts on the signed-in user's 2Chat account with their own role; the tool set (60 tools, 41 read-only, all annotated) is served by that server at runtime and is not covered by the pinned sha. Messaging tools deliver real WhatsApp and SMS messages to real phone numbers and can incur carrier or Meta charges, and the number reservation and purchase tools spend the account's 2Chat balance. Sign-in runs the pinned mcp-remote@0.15.2 through npx (Node.js 20.18.1+ and npm required), which opens a browser and a local callback port on first use and stores OAuth tokens in the plugin's Hermes data directory. The package marks the server untrusted, so Hermes asks before every tool the server does not mark read-only and refuses them in unattended runs. No telemetry."
+maintainer: 2ChatCo
+tier: community
+category: tools
+docs_url: https://github.com/2ChatCo/2chat-hermes-plugin#install-in-hermes-agent
+requires_hermes: ">=0.21.6"
+readme: true
+platforms: []
+capabilities:
+  provides_tools: []
+  provides_hooks: []
+  provides_middleware: []
+  requires_env: []
